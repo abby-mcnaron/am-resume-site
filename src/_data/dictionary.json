@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "primaryCta": {
+      "name": "View Experience",
+      "url": "#experience"
+    },
+    "secondaryCta": {
+      "name": "Get in Touch",
+      "url": "#contact"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with 11ty, Tailwind CSS. Site based on <a href=\"https://github.com/learnwithgurpreet/11ty-innovative-intro\">11ty-innovative-intro</a>."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "About Me",
+  "code": [
+    {
+      "label": "Location",
+      "value": "Seattle, WA"
+    },
+    {
+      "label": "Role",
+      "value": "Senior Software Engineer"
+    },
+    {
+      "label": "Skills",
+      "value": "Java, Python, APIs, Spring"
+    },
+    {
+      "label": "Focus",
+      "value": "Backend Web Services & Security"
+    },
+    {
+      "label": "Motto",
+      "value": "\"Solve Complex Technical Problems with Creative Solutions\""
+    }
+  ],
+  "textHtml": "I'm known for strong attention to detail, high-quality work, and a perpetual drive to keep learning. I enjoy investigating technical problems and finding creative solutions. As a Java software developer specializing in web services and backend systems, I've built and maintained high-traffic services handling hundreds of millions of requests per day, ensuring data is processed securely, efficiently, and accurately.  I've voluntarily led project planning and execution. I work independently, communicate proactively, and support my colleagues, offering help when needed."
+}

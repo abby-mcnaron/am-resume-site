@@ -1,0 +1,107 @@
+{
+  "title": "Experience",
+  "position": [
+    {
+      "company": "T-Mobile",
+      "location": "Bellevue, WA",
+      "start": "2021",
+      "end": "2026",
+      "details": [
+        {
+          "role": "Senior Software Engineer",
+          "start": "2021",
+          "end": "2026",
+          "summary": [
+            {
+              "bullet": "Led small team that developed and maintained several data-heavy RESTful Java services for handling JSON payloads, all running on AWS Kubernetes clusters."
+            },
+            {
+              "bullet": "Designed and launched a secure RESTful Java API that handled authenticated file downloads, removing a major bottleneck and helping Android team cut their release cadence from over a month to 2 weeks."
+            },
+            {
+              "bullet": "Refactored and modernized legacy codebases, following current security best practices and enabling faster application development."
+            },
+            {
+              "bullet": "Researched and provided recommendations, bringing down cloud costs by 10%."
+            },
+            {
+              "bullet": "Worked overtime to research, organize, and fix major security vulnerabilities across multiple large applications, finalizing production changes in less than 2 weeks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "FedEx Services",
+      "location": "Memphis, TN",
+      "start": "2012",
+      "end": "2021",
+      "details": [
+        {
+          "role": "Senior Engineer Advisor",
+          "start": "2020",
+          "end": "2021",
+          "summary": [
+            {
+              "bullet": "Revamped payment web service to align with updated regulatory requirements, improving reliability and keeping the platform fully compliant."
+            }
+          ]
+        },
+        {
+          "role": "Senior Programmer Analyst",
+          "start": "2017",
+          "end": "2020",
+          "summary": [
+            {
+              "bullet": "Launched modern RESTful Java service replacing legacy system, boosting core business workflow speed by 25%+."
+            },
+            {
+              "bullet": "Designed and built data-migration tool moving account history from mainframe databases to distributed XML datastore with clean, reliable transfer."
+            },
+            {
+              "bullet": "Standardized data processing and aligned the platform with modern coding practices by developing resilient account-maintenance features for a high-volume Java web service."
+            }
+          ]
+        },
+        {
+          "role": "Programmer Analyst",
+          "start": "2015",
+          "end": "2017",
+          "summary": [
+            {
+              "bullet": "Migrated account functionality from mainframe systems to distributed Java web service and Oracle datastore, improving scalability and maintainability."
+            },
+            {
+              "bullet": "Gave teams clearer insight into their data and faster searchability by designing XML data-configuration updates supporting major customer projects."
+            },
+            {
+              "bullet": "Redesigned internal client-facing site for tracking volume trends and viewing XML schema setups, improving usability and data visibility."
+            },
+            {
+              "bullet": "Created data setup and migration approach enabling smooth FedEx Office system upgrades."
+            }
+          ]
+        },
+        {
+          "role": "Associate Programmer Analyst",
+          "start": "2012",
+          "end": "2015",
+          "summary": [
+            {
+              "bullet": "Supported test and production environments for Java-based SOAP enterprise web service driven by Oracle database clusters, improving stability and uptime."
+            },
+            {
+              "bullet": "Updated internal site showcasing team-owned systems, making it easier for other projects to discover, understand, and integrate with our services."
+            },
+            {
+              "bullet": "Contributed to enterprise address-service rollout by owning key schema design tasks under senior engineer mentorship, enabling faster address verification at package hubs and reducing processing delays."
+            },
+            {
+              "bullet": "Planned and executed large-scale application-server migration, resulting in more performant and reliable web services."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

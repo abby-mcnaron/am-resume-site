@@ -1,0 +1,30 @@
+{
+  "name": "abby-mcnaron-site",
+  "shortName": "AM",
+  "url": "https://abby.mcnaron.dev",
+  "canonical": "https://abby.mcnaron.dev",
+  "googleSiteVerification": "google-site-verification-code",
+  "lang": "en",
+  "locale": "en_US",
+  "title": "Abby McNaron - Senior Software Engineer",
+  "themeColor": "#f8fafc",
+  "backgroundColor": "#031235",
+  "mainNavigation": [
+    {
+      "name": "About",
+      "url": "#about"
+    },
+    {
+      "name": "Skills",
+      "url": "#skills"
+    },
+    {
+      "name": "Experience",
+      "url": "#experience"
+    },
+    {
+      "name": "Contact",
+      "url": "#contact"
+    }
+  ]
+}

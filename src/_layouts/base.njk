@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" class="scroll-smooth theme">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ site.title or title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="{{ site.googleSiteVerification }}"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="googlebot" content="index,follow"/>
+    <meta content="{{ keywords }}" name="keywords">
+    <meta content="{{ description }}" name="description">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ '/assets/images/Abby_Profile.jpg' }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/Abby_Profile.jpg' }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/images/Abby_Profile.jpg' }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/Abby_Profile.jpg' }}">
+    <meta name="msapplication-TileColor" content="{{ site.themeColor }}">
+    <meta name="theme-color" content="{{ site.themeColor }}">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="canonical" href="{{ site.canonical }}">
+    <meta property="og:locale" content="{{ site.locale }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ author.name }}, {{ author.title }}, {{ author.org }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:image" content="{{ author.image }}">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta content="All" name="audience">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+      const toggleDarkMode = function(){
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.theme = 'light';      
+        } else {
+          document.documentElement.classList.add('dark')
+          localStorage.theme = 'dark'
+        }
+      };
+      const forgetPref = function(){
+        localStorage.removeItem('theme')
+        window.location.reload()
+      }
+    </script>
+  </head>
+  <body class="antialiased">
+    <div class="container mx-auto py-4">
+      {% include "partials/_header.njk" %}
+      <main class="text-foreground-light dark:text-foreground-dark px-4">
+        {{ content | safe }}
+      </main>
+      {% include "partials/_footer.njk" %}
+    </div>
+    {% set menu_toggle %}{% include "menu_toggle.js" %}{% endset %}
+    <script>
+      // prettier-ignore
+      {{ menu_toggle | jsmin | safe }}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+  <section id="experience" class="py-20 border-t border-border-light dark:border-border-dark">
+    <h2 class="text-3xl font-bold mb-8 text-center">Experience</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-1 gap-6">
+        {% for item in experience.position %}
+            <div class="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark
+                text-card-foreground-light dark:text-card-foreground-dark shadow-xs">
+                <div class="p-6">
+                        <p class="text-xl font-semibold mb-2">{{ item.company }} | {{ item.location }} | {{ item.start }} to {{ item.end }} </p>
+                        {% for detail in item.details %}
+                            <h4 class="text-l text-muted-foreground-light dark:text-muted-foreground-dark mt-2 mb-2">{{ detail.role }}, {{ detail.start }} to {{ detail.end }}</h4>
+                            <ul class="list-disc">
+                            {% for summary in detail.summary %}
+                                <li class="text-sm">{{ summary.bullet }}</li>
+                            {% endfor %}
+                            </ul>
+                        {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
